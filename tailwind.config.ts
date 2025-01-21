@@ -41,6 +41,10 @@ export default {
       animation: {
         "fade-up": "fadeUp 0.5s ease-out forwards",
         "fade-down": "fadeDown 0.5s ease-out forwards",
+        "fade-left": "fadeLeft 0.5s ease-out forwards",
+        "fade-right": "fadeRight 0.5s ease-out forwards",
+        "scale-up": "scaleUp 0.5s ease-out forwards",
+        "float": "float 6s ease-in-out infinite",
       },
       keyframes: {
         fadeUp: {
@@ -51,6 +55,25 @@ export default {
           "0%": { opacity: "0", transform: "translateY(-20px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
+        fadeLeft: {
+          "0%": { opacity: "0", transform: "translateX(20px)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
+        fadeRight: {
+          "0%": { opacity: "0", transform: "translateX(-20px)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
+        scaleUp: {
+          "0%": { opacity: "0", transform: "scale(0.95)" },
+          "100%": { opacity: "1", transform: "scale(1)" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-20px)" },
+        },
+      },
+      scale: {
+        "102": "1.02",
       },
     },
   },
